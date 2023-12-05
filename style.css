@@ -718,6 +718,7 @@ input:checked + label .description {
     font-size: 0.9em;
   }
 
+  /***********Address****/
   /*********** Footer *********/
   footer {
     padding: 10em 4em 4em;
