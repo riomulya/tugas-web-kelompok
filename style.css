@@ -602,7 +602,7 @@ input:checked + label .description {
 
   /*********** Navigation Bar  *********/
   nav {
-    padding: 2em 5em;
+    padding: 1em 5em;
   }
 
   .logo {
@@ -694,7 +694,7 @@ input:checked + label .description {
   /*********** Contact Form *********/
 
   .contact {
-    margin: 1em 18em;
+    margin: 1em 5em;
     padding: 3em 2em 1em;
     bottom: -7rem;
   }
