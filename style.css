@@ -176,14 +176,13 @@ nav {
 }
 
 .hero-image img {
-  border-radius: 100%;
   position: relative;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0 1rem .1rem black);
 }
 
 /*********** Features *********/
 .features h1 {
-  margin: auto;
+  margin: 0 auto;
   font-size: 2rem;
 }
 
@@ -279,23 +278,31 @@ nav {
   margin: 2em;
   padding: 2.5em 2em;
   border-radius: 0.3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex: 1;
+  row-gap: 1em;
 }
 
 .quote-txt {
   text-align: left;
   font-size: 0.85em;
+  flex: 1;
 }
 .author {
   display: flex;
   align-items: center;
   justify-content: left;
   padding-top: 1em;
+  flex: 1;
 }
 
 .author-img {
-  width: 10%;
-  height: 10%;
-  border-radius: 5em;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .author-details {
@@ -341,15 +348,29 @@ nav {
 .contact-info p {
   font-size: 0.9em;
 }
+#form{
+}
+#form .row{
+  margin: 1rem auto;
+  display: flex;
+  width: 50rem;
+  justify-content: center;
+  align-items: self-start;
+  border: none;
+}
+
+.row textarea{
+  flex: 1;
+  border-radius: 1rem;
+  padding: 1rem;
+}
 
 #email-input {
-  height: 4.5em;
-  width: 21.55em;
   border: none;
+  padding-left: 1rem;
   border-radius: 2em;
   margin-bottom: 2em;
-  justify-content: center;
-  padding-left: 2.5em;
+  flex: 5;
 }
 
 #email-input::placeholder {
@@ -364,11 +385,12 @@ nav {
 #email-input:focus::placeholder {
   color: transparent;
 }
-
+  
 .contact-form .btn {
   padding: 1.5em 5em;
   border-radius: 2em;
   font-size: 1.05em;
+  flex: 1;
 }
 
 #validation-message {
@@ -486,7 +508,7 @@ footer {
 
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -496,10 +518,10 @@ footer {
   height: 400px;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: start;
 }
 
 .card {
+  padding: 1rem;
   width: 80px;
   border-radius: 0.75rem;
   background-size: cover;
@@ -511,42 +533,37 @@ footer {
   align-items: flex-end;
   transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+  filter:blur(3px);
 }
 
 .card > .row {
   color: white;
   display: flex;
-  flex-wrap: nowrap;
+  gap: 1rem;
+  margin: 0 auto;
 }
 
 .card > .row > .icon {
-  background: #223;
+  background: rgba(34,34,52, 1);
   color: white;
   border-radius: 50%;
   width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 15px;
+  height: 50px;
+  line-height: 50px;
 }
 
 .card > .row > .description {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  background: rgba(34,34,52, 1);
+  padding: .3rem;
   overflow: hidden;
-  height: 80px;
-  width: 520px;
+  width: 20rem;
   opacity: 0;
-  transform: translateY(30px);
   transition-delay: 0.3s;
   transition: all 0.3s ease;
+  border-radius: 5rem;
+  flex: 1;
 }
-/* 
-.description p {
-  color: #b0b0ba;
-  padding-top: 5px;
-} */
+
 
 .description h4 {
   text-transform: uppercase;
@@ -558,6 +575,7 @@ input[type='radio'] {
 
 input:checked + label {
   width: 600px;
+  filter: opacity(1);
 }
 
 input:checked + label .description {
@@ -602,7 +620,7 @@ input:checked + label .description {
 
   /*********** Navigation Bar  *********/
   nav {
-    padding: 1em 5em;
+    padding: 2em 5em;
   }
 
   .logo {
@@ -637,7 +655,7 @@ input:checked + label .description {
     flex-wrap: wrap;
     flex-basis: 100%;
     flex: 1;
-    padding: 8em 9em;
+    padding: 10em 0 0;
   }
 
   .flex {
