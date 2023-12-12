@@ -124,6 +124,28 @@ nav {
   background: var(--clr-grey);
   transition: width 0.3s;
 }
+.login-form {
+      display: flex;
+      align-items: center;
+    }
+
+    .login-form input {
+      margin-right: 10px;
+      padding: 5px;
+    }
+
+    .login-form button {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 2em;
+      cursor: pointer;
+    }
+
+    .login-form button:hover {
+      background-color: #45a049;
+    }
 
 /* .nav-link::before {
   content: '';
