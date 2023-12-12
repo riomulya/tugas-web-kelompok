@@ -125,6 +125,7 @@ nav {
 }
 .login-form {
       display: flex;
+      flex-direction: column-reverse;
       align-items: center;
     }
 
@@ -1026,6 +1027,7 @@ input:checked + label .description {
 	.navbar .nav-item .nav-link {
 		padding-right: 0.75rem;
 		padding-left: 0.75rem;
+    
 	}
 
 	.navbar .dropdown-menu {
