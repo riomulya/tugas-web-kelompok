@@ -670,7 +670,6 @@ input:checked + label .description {
   }
 
   
-
   /*********** Productivity *********/
 
   .productivity {
@@ -827,7 +826,9 @@ input:checked + label .description {
 /**********************/
 .form-control-input,
 .form-control-textarea {
-	width: 100%;
+	width: 50%;
+  display: flex;
+  flex-direction: inherit;
 	appearance: none;
 	border-radius: 4px;
 	font-size: 0.875rem;
@@ -865,6 +866,11 @@ input:checked + label .description {
 	margin-left: 0.125rem;
 	margin-bottom: 0.25rem;
 }
+/******maps*********/
+  .map{
+    display: flex;
+    justify-content:right;
+  }
 
 
 /***********************/
@@ -1052,14 +1058,14 @@ input:checked + label .description {
 /*     Back To Top Button     */
 /******************************/
 #myBtn {
-	z-index: 99;
+	z-index: 99999999;
 	right: 20px;
 	width: 52px;
 	height: 52px;
 	bottom: 20px;
 	border: none;
 	outline: none;
-	display: none;
+	display: block;
 	position: fixed;
 	cursor: pointer;
 	border-radius: 50%;
@@ -1067,7 +1073,7 @@ input:checked + label .description {
 }
 
 #myBtn:hover {
-  	background-color: #0f0f11;
+  	background-color: #2020e0;
 }
 
 #myBtn img {
