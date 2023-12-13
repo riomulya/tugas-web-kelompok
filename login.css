@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(./assets/images/wallhaven-l882py_1920x1080.png);  
+  background-image: url(./assets/images/giphy.gif);  
   background-size: cover;
   background-repeat: repeat;
   background-attachment: scroll;
@@ -31,7 +31,7 @@ h1.title {
   font-size: 45px;
   line-height: 45px;
   margin: 0;
-  text-shadow: 0 0 10px rgba(16, 64, 74, 0.5);
+  text-shadow: 0 0 10px rgba(16, 42, 74, 0.5);
 }
 
 p {
