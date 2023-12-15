@@ -1,23 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-image: url(./assets/images/giphy.gif);  
+  background-color: hsl(218, 28%, 13%);
   background-size: cover;
   background-repeat: repeat;
   background-attachment: scroll;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow: hidden;
   height: 100vh;
-  
 }
 
 h1 {
@@ -119,26 +118,26 @@ button.ghost {
   color: #fff;
 }
 
-button.ghost i{
+button.ghost i {
   position: absolute;
   opacity: 0;
   transition: 0.3s ease-in-out;
 }
 
-button.ghost i.register{
+button.ghost i.register {
   right: 70px;
 }
 
-button.ghost i.login{
+button.ghost i.login {
   left: 70px;
 }
 
-button.ghost:hover i.register{
+button.ghost:hover i.register {
   right: 40px;
   opacity: 1;
 }
 
-button.ghost:hover i.login{
+button.ghost:hover i.login {
   left: 40px;
   opacity: 1;
 }
@@ -249,7 +248,7 @@ input {
 }
 
 .overlay::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   right: 0;
@@ -316,4 +315,50 @@ input {
 
 .social-container a:hover {
   border: 1px solid #4bb6b7;
+}
+
+/* Original CSS Above This Line */
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  h1.title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  button {
+    padding: 10px 60px;
+  }
+
+  input {
+    padding: 10px 12px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .form-container,
+  .overlay-container {
+    width: 100%;
+  }
+
+  .overlay {
+    width: 100%;
+  }
+
+  .overlay-panel {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .overlay-left,
+  .overlay-right {
+    transform: translateX(0);
+  }
 }
